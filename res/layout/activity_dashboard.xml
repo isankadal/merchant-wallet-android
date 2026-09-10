@@ -163,7 +163,7 @@
                     android:layout_width="0dp" android:layout_height="80dp"
                     android:layout_columnWeight="1" android:layout_margin="4dp"
                     app:cardCornerRadius="8dp" app:cardElevation="2dp">
-                    <TextView android:id="@+id/btn_quick_load"
+                    <TextView android:id="@+id/tv_quick_load"
                         android:layout_width="wrap_content" android:layout_height="wrap_content"
                         android:layout_gravity="center" android:text="Load Wallet" android:gravity="center"/>
                 </androidx.cardview.widget.CardView>
@@ -172,7 +172,7 @@
                     android:layout_width="0dp" android:layout_height="80dp"
                     android:layout_columnWeight="1" android:layout_margin="4dp"
                     app:cardCornerRadius="8dp" app:cardElevation="2dp">
-                    <TextView android:id="@+id/btn_quick_withdraw"
+                    <TextView android:id="@+id/tv_quick_withdraw"
                         android:layout_width="wrap_content" android:layout_height="wrap_content"
                         android:layout_gravity="center" android:text="Withdraw" android:gravity="center"/>
                 </androidx.cardview.widget.CardView>
@@ -181,7 +181,7 @@
                     android:layout_width="0dp" android:layout_height="80dp"
                     android:layout_columnWeight="1" android:layout_margin="4dp"
                     app:cardCornerRadius="8dp" app:cardElevation="2dp">
-                    <TextView android:id="@+id/btn_quick_history"
+                    <TextView android:id="@+id/tv_quick_history"
                         android:layout_width="wrap_content" android:layout_height="wrap_content"
                         android:layout_gravity="center" android:text="History" android:gravity="center"/>
                 </androidx.cardview.widget.CardView>
@@ -190,7 +190,7 @@
                     android:layout_width="0dp" android:layout_height="80dp"
                     android:layout_columnWeight="1" android:layout_margin="4dp"
                     app:cardCornerRadius="8dp" app:cardElevation="2dp">
-                    <TextView android:id="@+id/btn_quick_profile"
+                    <TextView android:id="@+id/tv_quick_profile"
                         android:layout_width="wrap_content" android:layout_height="wrap_content"
                         android:layout_gravity="center" android:text="Profile" android:gravity="center"/>
                 </androidx.cardview.widget.CardView>
