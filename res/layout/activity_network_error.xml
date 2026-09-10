@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- MWA-15: Network / API Error Screen -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="📡"
+        android:textSize="64sp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unable to connect to server"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="2dp"
+        app:cardBackgroundColor="#FFEBEE">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <TextView
+                android:id="@+id/tv_error_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Error: Network timeout"
+                android:textStyle="bold"
+                android:textColor="#C62828"/>
+            <TextView
+                android:id="@+id/tv_error_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Code: 504"
+                android:textSize="12sp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please check your internet connection and try again."
+        android:textSize="14sp"
+        android:gravity="center"
+        android:textColor="#757575"
+        android:layout_marginBottom="32dp"/>
+
+    <Button android:id="@+id/btn_retry"
+        android:layout_width="match_parent" android:layout_height="56dp"
+        android:text="RETRY" android:textSize="16sp"
+        android:layout_marginBottom="12dp"/>
+
+    <Button android:id="@+id/btn_go_home"
+        android:layout_width="match_parent" android:layout_height="56dp"
+        android:text="GO TO HOME"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- MWA-06: Load Wallet Screen -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tv_current_balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current Balance: ₹12,400.00"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Amount (₹)"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginBottom="12dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_load_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chip_group_load_amounts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp">
+            <com.google.android.material.chip.Chip android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="₹500"/>
+            <com.google.android.material.chip.Chip android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="₹1000"/>
+            <com.google.android.material.chip.Chip android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="₹2000"/>
+            <com.google.android.material.chip.Chip android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="₹5000"/>
+        </com.google.android.material.chip.ChipGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Payment Method"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"/>
+
+        <RadioGroup
+            android:id="@+id/rg_payment_method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp">
+            <RadioButton android:id="@+id/rb_net_banking"
+                android:layout_width="match_parent" android:layout_height="48dp"
+                android:text="🏦  Net Banking"/>
+            <RadioButton android:id="@+id/rb_upi"
+                android:layout_width="match_parent" android:layout_height="48dp"
+                android:text="💳  UPI"
+                android:checked="true"/>
+            <RadioButton android:id="@+id/rb_debit_card"
+                android:layout_width="match_parent" android:layout_height="48dp"
+                android:text="🏧  Debit Card"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_load_now"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="LOAD NOW"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_loading_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loading Status: Processing..."
+            android:textSize="14sp"
+            android:visibility="gone"
+            android:layout_marginBottom="24dp"/>
+
+    </LinearLayout>
+</ScrollView>

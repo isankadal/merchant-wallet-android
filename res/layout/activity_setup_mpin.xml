@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- MWA-16: Secure Storage / PIN Setup Screen -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:text="Create a 6-digit MPIN for secure access"
+            android:textSize="16sp"
+            android:layout_marginBottom="32dp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Enter New MPIN" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="24dp">
+            <View android:id="@+id/dot1_new" android:layout_width="16dp" android:layout_height="16dp"
+                android:background="#BDBDBD" android:layout_margin="6dp"/>
+            <View android:id="@+id/dot2_new" android:layout_width="16dp" android:layout_height="16dp"
+                android:background="#BDBDBD" android:layout_margin="6dp"/>
+            <View android:id="@+id/dot3_new" android:layout_width="16dp" android:layout_height="16dp"
+                android:background="#BDBDBD" android:layout_margin="6dp"/>
+            <View android:id="@+id/dot4_new" android:layout_width="16dp" android:layout_height="16dp"
+                android:background="#BDBDBD" android:layout_margin="6dp"/>
+            <View android:id="@+id/dot5_new" android:layout_width="16dp" android:layout_height="16dp"
+                android:background="#BDBDBD" android:layout_margin="6dp"/>
+            <View android:id="@+id/dot6_new" android:layout_width="16dp" android:layout_height="16dp"
+                android:background="#BDBDBD" android:layout_margin="6dp"/>
+        </LinearLayout>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Confirm MPIN" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="24dp">
+            <View android:id="@+id/dot1_conf" android:layout_width="16dp" android:layout_height="16dp"
+                android:background="#BDBDBD" android:layout_margin="6dp"/>
+            <View android:id="@+id/dot2_conf" android:layout_width="16dp" android:layout_height="16dp"
+                android:background="#BDBDBD" android:layout_margin="6dp"/>
+            <View android:id="@+id/dot3_conf" android:layout_width="16dp" android:layout_height="16dp"
+                android:background="#BDBDBD" android:layout_margin="6dp"/>
+            <View android:id="@+id/dot4_conf" android:layout_width="16dp" android:layout_height="16dp"
+                android:background="#BDBDBD" android:layout_margin="6dp"/>
+            <View android:id="@+id/dot5_conf" android:layout_width="16dp" android:layout_height="16dp"
+                android:background="#BDBDBD" android:layout_margin="6dp"/>
+            <View android:id="@+id/dot6_conf" android:layout_width="16dp" android:layout_height="16dp"
+                android:background="#BDBDBD" android:layout_margin="6dp"/>
+        </LinearLayout>
+
+        <!-- Number pad -->
+        <GridLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:columnCount="3" android:rowCount="4" android:layout_marginBottom="24dp">
+            <Button android:id="@+id/pad_1" android:layout_width="80dp" android:layout_height="64dp"
+                android:text="1" android:textSize="20sp" style="@style/Widget.AppCompat.Button.Borderless"/>
+            <Button android:id="@+id/pad_2" android:layout_width="80dp" android:layout_height="64dp"
+                android:text="2" android:textSize="20sp" style="@style/Widget.AppCompat.Button.Borderless"/>
+            <Button android:id="@+id/pad_3" android:layout_width="80dp" android:layout_height="64dp"
+                android:text="3" android:textSize="20sp" style="@style/Widget.AppCompat.Button.Borderless"/>
+            <Button android:id="@+id/pad_4" android:layout_width="80dp" android:layout_height="64dp"
+                android:text="4" android:textSize="20sp" style="@style/Widget.AppCompat.Button.Borderless"/>
+            <Button android:id="@+id/pad_5" android:layout_width="80dp" android:layout_height="64dp"
+                android:text="5" android:textSize="20sp" style="@style/Widget.AppCompat.Button.Borderless"/>
+            <Button android:id="@+id/pad_6" android:layout_width="80dp" android:layout_height="64dp"
+                android:text="6" android:textSize="20sp" style="@style/Widget.AppCompat.Button.Borderless"/>
+            <Button android:id="@+id/pad_7" android:layout_width="80dp" android:layout_height="64dp"
+                android:text="7" android:textSize="20sp" style="@style/Widget.AppCompat.Button.Borderless"/>
+            <Button android:id="@+id/pad_8" android:layout_width="80dp" android:layout_height="64dp"
+                android:text="8" android:textSize="20sp" style="@style/Widget.AppCompat.Button.Borderless"/>
+            <Button android:id="@+id/pad_9" android:layout_width="80dp" android:layout_height="64dp"
+                android:text="9" android:textSize="20sp" style="@style/Widget.AppCompat.Button.Borderless"/>
+            <View android:layout_width="80dp" android:layout_height="64dp"/>
+            <Button android:id="@+id/pad_0" android:layout_width="80dp" android:layout_height="64dp"
+                android:text="0" android:textSize="20sp" style="@style/Widget.AppCompat.Button.Borderless"/>
+            <Button android:id="@+id/pad_backspace" android:layout_width="80dp" android:layout_height="64dp"
+                android:text="⌫" android:textSize="20sp" style="@style/Widget.AppCompat.Button.Borderless"/>
+        </GridLayout>
+
+        <CheckBox android:id="@+id/cb_enable_biometric"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Enable Biometric Login"
+            android:layout_marginBottom="24dp"/>
+
+    </LinearLayout>
+</ScrollView>
